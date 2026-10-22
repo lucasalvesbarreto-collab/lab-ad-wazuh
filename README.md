@@ -39,15 +39,16 @@ Windows Server 2022 · Active Directory DS/DNS · GPO · PowerShell · Ubuntu Se
 
 | # | Cenário | Evento Windows | Classificação |
 |---|---|---|---|
-| 1 | Falhas de logon repetidas (brute force) | 4625 | [PREENCHER] |
-| 2 | Bloqueio de conta | 4740 | [PREENCHER] |
-| 3 | Criação de usuário | 4720 | [PREENCHER] |
-| 4 | Inclusão em grupo administrativo | 4728 / 4732 | [PREENCHER] |
+| 1 | Falhas de logon repetidas (brute force) | 4625 | Suspeito  |
+| 2 | Bloqueio de conta | 4740 | Suspeito  |
+| 3 | Criação de usuário | 4720 | Benigno (autorizado) |
+| 4 | Inclusão em grupo administrativo | 4728 / 4732 | Incidente (escalada de privilégio) |
 
 ## Principais aprendizados
 
-- [PREENCHER: 2 a 3 pontos, por exemplo: sem a Advanced Audit Policy ativa, os eventos de logon não aparecem no Wazuh]
-- [PREENCHER]
+- Auditoria é pré-requisito do monitoramento: sem a Advanced Audit Policy ativa no Windows, os eventos de logon não chegavam ao Wazuh. Um SIEM só enxerga o que as fontes registram.
+- DNS é a base do AD: o CLIENTE01 só ingressou no domínio depois que apontei o DNS para o DC01.
+- 
 
 ## Próximos passos
 

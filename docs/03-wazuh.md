@@ -1,7 +1,7 @@
 # 03 · Wazuh (SIEM)
 
 ## Instalação
-- Versão do Wazuh: [PREENCHER]
+- Versão do Wazuh: [v4.9.2]
 - Método: instalação "all-in-one" (manager + indexer + dashboard) no WAZUH01, conforme a documentação oficial: https://documentation.wazuh.com
 
 ## Agentes
@@ -17,7 +17,7 @@ Sem a auditoria avançada, os eventos de segurança não são gerados. Ativei em
 - Account Management → User Account Management, Security Group Management
 
 ## Sysmon (opcional)
-[PREENCHER: instalou? qual configuração?]
+Instalado
 
 ## Problemas encontrados e soluções
-- [PREENCHER: por exemplo, agente "disconnected" por firewall ou DNS]
+- Nenhum 
