@@ -19,7 +19,6 @@ Praticar, em ambiente isolado, duas rotinas de segurança da informação:
 
 ![Diagrama de rede](imagens/diagrama-rede.png)
 
-> Ajuste a tabela se seus IPs forem diferentes. Todas as VMs ficam em rede interna isolada.
 
 ## Ferramentas
 
